@@ -19,6 +19,7 @@
  white     - #FFFFFF
  grey      - #EBEBEB
  hot pink  - #e1a0d7
+ grey      - #636363
  */
 @import "bootstrap";
 
@@ -71,6 +72,44 @@
     border-radius: 15%;
     margin: 0 auto;
     border: 5px solid #636363;
+}
+
+.yy-center-panel {
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.yy-panel-overlay {
+  position: absolute;
+  bottom: 11.5%;
+  left: 0;
+  right: 0;
+  background-color: #e1a0d7;
+  overflow: hidden;
+  width: 450px;
+  height: 20%;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  margin: 0 auto;
+  border-radius: 0rem 0rem 0.25rem 0.25rem;
+  opacity: 0.8;
+}
+
+.yy-center-panel:hover .yy-panel-overlay {
+  height: 88.5%;
+}
+
+.yy-panel-title {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 .in-10 {
